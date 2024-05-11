@@ -1,0 +1,41 @@
+:is(.footer, .social-media) {
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.footer {
+  height: 5vw;
+  background-color: rgb(119 113 113);
+}
+
+.footer > div {
+  width: 30vw;
+}
+
+.footer-panel-left {
+  font-size: 1.3vw;
+}
+
+.social-media {
+  width: 15vw;
+  height: 5vw;
+  margin: auto;
+}
+
+.footer-panel-right {
+  display: flex;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+
+.footer-panel-right img {
+  width: 4vw;
+  height: 4vw;
+  object-fit: contain;
+}

@@ -1,0 +1,23 @@
+:is(#stars, #sky) {
+  z-index: 100;
+}
+
+:is(#moon, #sun) {
+  z-index: 200;
+}
+
+#mountain {
+  z-index: 400;
+}
+
+#rocks {
+  z-index: 500;
+}
+
+#wolf {
+  z-index: 600;
+}
+
+#water {
+  z-index: 700;
+}

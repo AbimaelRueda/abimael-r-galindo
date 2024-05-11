@@ -1,0 +1,207 @@
+.contact-section {
+  padding-top: 6.5vw;
+  height: max-content;
+}
+
+:is(.contact-container,
+.container-cv,
+.form,
+.main-form-container,
+.main-form-container-panel-left,
+.main-form-container-panel-right,
+.button-contact-section) {
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.contact-container {
+  width: 100vw;
+  height: max-content;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin-top: 2.55vw;
+}
+
+:is(.container-cv,
+.form,
+.main-form-container-panel-left,
+.main-form-container-panel-right,
+.input-box,
+.input-box-message) {
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+
+.form {
+  width: 54vw;
+  height: 29.8vw;
+  padding: 2vw;
+  background: rgba(255 255 255 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+  backdrop-filter: blur(7.5px);
+  border-radius: 0.9vw;
+  border: 0.1vw solid rgba(255 255 255 / 18%);
+  margin-bottom: 5vw;
+}
+
+.contact-section-dt .form {
+  background: rgba(255 255 255 / 20%);
+}
+
+.main-form-container {
+  width: 49.75vw;
+  height: 20.15vw;
+  margin-top: 1vw;
+}
+
+:is(.main-form-container-panel-left, .main-form-container-panel-right) {
+  width: 24.9vw;
+  height: 20.12vw;
+}
+
+.secondary-form-container {
+  margin: 1vw;
+}
+
+:is(.input-box, .input-box-message) {
+  position: relative;
+  width: 22vw;
+  height: 5.65vw;
+  margin: 1vw;
+  display: flex;
+  justify-content: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+}
+
+.input-box-message {
+  height: 17vw;
+}
+
+:is(.input-box input, #message) {
+  width: 21.18vw;
+  height: 3.6vw;
+  padding: 0.75vw;
+  border: 0.3vw solid;
+  background: transparent;
+  border-radius: 0.4vw;
+  outline: none;
+  font-size: 1.2vw;
+  padding-left: 1.8vw;
+}
+
+#message {
+  height: 16.15vw;
+  resize: none;
+}
+
+:is(.contact-section-lt .input-box input, .contact-section-lt #message) {
+  color: var(--color-font-lt);
+  border-color: var(--third-color-lt);
+}
+
+:is(.contact-section-dt .input-box input, .contact-section-dt #message) {
+  color: var(--color-font-dt);
+  border-color: var(--third-color-dt);
+}
+
+:is(.input-box span, .input-box-message span) {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  color: var(--color-font-dt);
+  transform: translateX(0.75vw) translateY(-0.55vw);
+  font-size: 0.8vw;
+  padding: 0 0.75vw;
+  letter-spacing: 0.16vw;
+}
+
+.icon-input {
+  position: absolute;
+  font-size: 1.4vw;
+  margin-top: 1vw;
+  margin-left: 0.4vw;
+}
+
+.contact-section-lt .icon-input {
+  color: var(--third-color-lt);
+}
+
+.contact-section-dt .icon-input {
+  color: var(--third-color-dt);
+}
+
+.button-contact-section {
+  width: 9vw;
+  height: 3.47vw;
+  padding: 0.6vw 1vw;
+  color: var(--color-font-dt);
+  font-size: 1.3vw;
+  border-radius: 0.3vw;
+  outline: none;
+  border: none;
+  letter-spacing: 0.1vw;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.button-contact-section span {
+  transition: 0.5s;
+}
+
+:is(.contact-section-lt .input-box span,
+.contact-section-lt .input-box-message span,
+.contact-section-lt .button-contact-section) {
+  background-color: var(--third-color-lt);
+}
+
+:is(.contact-section-dt .input-box span,
+.contact-section-dt .input-box-message span,
+.contact-section-dt .button-contact-section) {
+  background-color: var(--third-color-dt);
+}
+
+:is(.input-box label,
+.input-box-message label) {
+  color: #f00;
+  font-size: 1.2vw;
+}
+
+.icon-conf {
+  color: var(--color-font-dt);
+  font-size: 1.5vw;
+  transition: all 0.5s;
+}
+
+.icon-send {
+  transform: rotate(-45deg);
+}
+
+.icon-down {
+  transform: rotate(-90deg);
+}
+
+.contact-section-lt .button-contact-section:hover {
+  background-color: var(--color-hover-lt);
+}
+
+.contact-section-dt .button-contact-section:hover {
+  background-color: var(--color-hover-dt);
+}
+
+.button-contact-section:hover span {
+  transform: translateY(10vh);
+}
+
+.button-contact-section:hover .icon-conf {
+  transform: translateX(2.4vw) scale(2);
+}

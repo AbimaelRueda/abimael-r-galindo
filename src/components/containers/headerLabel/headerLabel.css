@@ -1,0 +1,35 @@
+.header-label {
+  list-style: none;
+  margin-left: 1vw;
+}
+
+.header-label a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.3vw 0.8vw;
+  border-radius: 0.5vw;
+  font-size: 1.21vw;
+  font-family: Poppins, sans-serif;
+}
+
+.header-label a span {
+  margin-left: 0.3vw;
+}
+
+.header-label-lt a {
+  color: var(--color-font-lt);
+}
+
+.header-label-dt a {
+  color: var(--color-font-dt);
+}
+
+.header-label-lt a:hover {
+  color: var(--color-font-dt);
+}
+
+.header-label-dt a:hover {
+  color: #e94b0c;
+}

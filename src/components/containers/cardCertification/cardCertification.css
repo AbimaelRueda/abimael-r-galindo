@@ -1,0 +1,88 @@
+:is(.card-certification, .button-card) {
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+}
+
+.card-certification {
+  width: 45vw;
+  height: 16vw;
+  margin: 1.5vw 1vw;
+  padding: 0.5vw;
+  padding-left: 1vw;
+  background: rgba(255 255 255 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31 38 135 / 37%);
+  backdrop-filter: blur(7.5px);
+  border-radius: 0.9vw;
+  border: 0.1vw solid rgba(255 255 255 / 18%);
+}
+
+.card-certification img {
+  width: 12vw;
+  height: 12vw;
+  object-fit: contain;
+  margin-right: 1vw;
+}
+
+.card-container-lt {
+  color: var(--color-font-lt);
+}
+
+.card-container-dt {
+  color: var(--color-font-dt);
+}
+
+.card-container p {
+  margin-top: 1vw;
+  font-size: 1.21vw;
+}
+
+.card-container h3 {
+  font-size: 1.41vw;
+}
+
+.card-container h4 {
+  font-size: 1.21vw;
+}
+
+.card-container h5 {
+  font-size: 1vw;
+}
+
+.button-card {
+  height: 5vw;
+}
+
+.button-card a {
+  width: 8vw;
+  height: 3.1vw;
+  padding: 0.6vw 1vw;
+  font-size: 1.2vw;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-font-dt);
+  letter-spacing: 0.1vw;
+  cursor: pointer;
+  border-radius: 0.3vw;
+  transition: 0.5s;
+}
+
+.card-container-lt .button-card a {
+  background-color: var(--third-color-lt);
+}
+
+.card-container-dt .button-card a {
+  background-color: var(--third-color-dt);
+}
+
+.card-container-lt .button-card a:hover {
+  background-color: var(--color-hover-lt);
+}
+
+.card-container-dt .button-card a:hover {
+  background-color: var(--color-hover-dt);
+}
